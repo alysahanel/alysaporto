@@ -3,7 +3,7 @@ services:
   - type: web
     name: gams-01
     env: node
-    rootDir: GAMS 01
+    rootDir: gams-01
     buildCommand: npm install
     startCommand: npm start
     envVars:
@@ -17,7 +17,7 @@ services:
   - type: web
     name: legal-web
     env: node
-    rootDir: Legal web/backend
+    rootDir: legal-web/backend
     buildCommand: npm install
     startCommand: npm start
     envVars:

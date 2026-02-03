@@ -42,34 +42,34 @@ app.use('/api', createProxyMiddleware({
 }));
 
 // Serve GAMS Frontend
-app.use('/gams', express.static(path.join(__dirname, 'GAMS 01/public'), {
+app.use('/gams', express.static(path.join(__dirname, 'gams-01/public'), {
     index: 'login.html' // Default to login page
 }));
 
 // Map root-level routes used by GAMS pages
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'GAMS 01/public', 'login.html'));
+    res.sendFile(path.join(__dirname, 'gams-01/public', 'login.html'));
 });
 app.get('/dashboard', (req, res) => {
-    res.sendFile(path.join(__dirname, 'GAMS 01/public', 'dashboard.html'));
+    res.sendFile(path.join(__dirname, 'gams-01/public', 'dashboard.html'));
 });
 app.get('/dashboard.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Legal web/frontend/public', 'dashboard.html'));
+    res.sendFile(path.join(__dirname, 'legal-web/frontend/public', 'dashboard.html'));
 });
 app.get('/requests', (req, res) => {
-    res.sendFile(path.join(__dirname, 'GAMS 01/public', 'requests.html'));
+    res.sendFile(path.join(__dirname, 'gams-01/public', 'requests.html'));
 });
 app.get('/stock', (req, res) => {
-    res.sendFile(path.join(__dirname, 'GAMS 01/public', 'stock.html'));
+    res.sendFile(path.join(__dirname, 'gams-01/public', 'stock.html'));
 });
 app.get('/calendar', (req, res) => {
-    res.sendFile(path.join(__dirname, 'GAMS 01/public', 'calendar.html'));
+    res.sendFile(path.join(__dirname, 'gams-01/public', 'calendar.html'));
 });
 app.get('/accounts', (req, res) => {
-    res.sendFile(path.join(__dirname, 'GAMS 01/public', 'accounts.html'));
+    res.sendFile(path.join(__dirname, 'gams-01/public', 'accounts.html'));
 });
 app.get('/stock-report', (req, res) => {
-    res.sendFile(path.join(__dirname, 'GAMS 01/public', 'stock-report.html'));
+    res.sendFile(path.join(__dirname, 'gams-01/public', 'stock-report.html'));
 });
 
 // --- Legal Web Rewrites ---
@@ -86,16 +86,16 @@ app.use('/legal/api', createProxyMiddleware({
 }));
 
 // Serve Legal Web Frontend
-app.use('/legal', express.static(path.join(__dirname, 'Legal web/frontend/public'), {
+app.use('/legal', express.static(path.join(__dirname, 'legal-web/frontend/public'), {
     index: 'dashboard.html' // Default to dashboard
 }));
 
 // Support absolute '/assets' for Legal Web pages that reference root paths
-app.use('/assets', express.static(path.join(__dirname, 'Legal web/frontend/public/assets')));
+app.use('/assets', express.static(path.join(__dirname, 'legal-web/frontend/public/assets')));
 
 // Map common Legal Web friendly routes to static files
 app.get('/legal/license-permit', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Legal web/frontend/public', 'license-permit.html'));
+    res.sendFile(path.join(__dirname, 'legal-web/frontend/public', 'license-permit.html'));
 });
 app.get('/legal/regulatory', (req, res) => {
     res.sendFile(path.join(__dirname, 'Legal web/frontend/public', 'regulatory.html'));

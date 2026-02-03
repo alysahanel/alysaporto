@@ -2,21 +2,21 @@
   "version": 2,
   "builds": [
     {
-      "src": "GAMS 01/api/index.js",
+      "src": "gams-01/api/index.js",
       "use": "@vercel/node",
       "config": {
         "includeFiles": [
-          "GAMS 01/public/**"
+          "gams-01/public/**"
         ]
       }
     },
     {
-      "src": "Legal web/api/index.js",
+      "src": "legal-web/api/index.js",
       "use": "@vercel/node",
       "config": {
         "includeFiles": [
-          "Legal web/frontend/public/**",
-          "Legal web/backend/public-assets/**"
+          "legal-web/frontend/public/**",
+          "legal-web/backend/public-assets/**"
         ]
       }
     },
@@ -28,19 +28,19 @@
   "rewrites": [
     {
       "source": "/gams/api/:match*",
-      "destination": "/GAMS 01/api/index.js"
+      "destination": "/gams-01/api/index.js"
     },
     {
       "source": "/gams/:match*",
-      "destination": "/GAMS 01/api/index.js"
+      "destination": "/gams-01/api/index.js"
     },
     {
       "source": "/legal/api/:match*",
-      "destination": "/Legal web/api/index.js"
+      "destination": "/legal-web/api/index.js"
     },
     {
       "source": "/legal/:match*",
-      "destination": "/Legal web/api/index.js"
+      "destination": "/legal-web/api/index.js"
     },
     {
       "source": "/cashtracking/static/:match*",

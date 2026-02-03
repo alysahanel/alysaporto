@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "checkJs": false,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["backend/*", "frontend/*"]
+    }
+  },
+  "include": [
+    "backend/**/*",
+    "frontend/**/*",
+    "api/**/*"
+  ],
+  "exclude": ["node_modules"]
+}

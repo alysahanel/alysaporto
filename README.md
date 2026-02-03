@@ -35,6 +35,22 @@ A personal finance application for tracking income and expenses.
 A responsive landing page design for a healthcare service provider.
 - **Tech Stack**: HTML5, CSS3, JavaScript.
 
+### Running GAMS 01
+```bash
+cd "gams-01"
+npm install
+npm start
+# Server runs on http://localhost:3001
+```
+
+### Running Legal Web
+```bash
+cd "legal-web/backend"
+npm install
+npm start
+# Server runs on http://localhost:3009
+```
+
 ## 🛠️ Deployment
 
 This project is configured for deployment on **Vercel** (Recommended for free tier without credit card) or **Render**.

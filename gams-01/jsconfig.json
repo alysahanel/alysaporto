@@ -8,5 +8,12 @@
       "*": ["src/*"]
     }
   },
+  "include": [
+    "src/**/*",
+    "server.js",
+    "api/**/*",
+    "scripts/**/*",
+    "public/**/*.js"
+  ],
   "exclude": ["node_modules"]
 }
