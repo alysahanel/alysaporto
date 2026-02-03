@@ -6,8 +6,7 @@
       "use": "@vercel/node",
       "config": {
         "includeFiles": [
-          "GAMS 01/public/**",
-          "GAMS 01/views/**"
+          "GAMS 01/public/**"
         ]
       }
     },

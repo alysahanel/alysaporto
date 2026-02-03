@@ -35,4 +35,25 @@ A personal finance application for tracking income and expenses.
 A responsive landing page design for a healthcare service provider.
 - **Tech Stack**: HTML5, CSS3, JavaScript.
 
+## 🛠️ Deployment
+
+This project is configured for deployment on **Vercel** (Recommended for free tier without credit card) or **Render**.
+
+### Option 1: Vercel (Recommended)
+1. Fork/Clone this repository to your GitHub.
+2. Log in to [Vercel](https://vercel.com) using GitHub.
+3. Click **"Add New Project"** and select this repository.
+4. Vercel will automatically detect the `vercel.json` configuration.
+5. Click **Deploy**.
+
+### Option 2: Render
+1. Sign up on Render and create a new **Blueprint**.
+2. Connect your repository.
+3. Render will automatically detect the `render.yaml` configuration.
+4. Apply the blueprint.
+
+### Configuration Files
+- `vercel.json`: Configuration for Vercel (Serverless Functions).
+- `render.yaml`: Configuration for Render (Docker/Native Services).
+
 
