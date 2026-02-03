@@ -2,7 +2,7 @@
 
 Welcome to my project portfolio repository. This monorepo contains several full-stack web applications demonstrating my skills in Software Engineering, including **Inventory Management**, **Legal Compliance**, and **Financial Tracking**.
 
-## 🚀 Projects Overview
+Projects Overview
 
 ### 1. Alysa Milano Management System
 A comprehensive system for managing  operational requests and inventory.
