@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alysa Milano - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Alysa.</a>
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h3>Hello, I'm</h3>
+                <h1>Alysa Milano</h1>
+                <h3>And I am a <span class="multiple-text"></span></h3>
+                <p>An IoT and Web Developer with an Informatics background from President University.</p>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/alysamilano" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/alysahanel" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/alysamila_?igsh=ZjlkeXF1eTJ4aGxy&utm_source=ig_contact_invite" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="#about" class="btn">About Me</a>
+            </div>
+            <div class="hero-img">
+                <img src="Prof.jpg" alt="Alysa Milano">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-img">
+                <img src="Prof.jpg" alt="Alysa Milano">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>IoT & Web Developer</h3>
+                <p>I am an Informatics student at President University with a strong interest in Internet of Things (IoT) and web application development. I have experience designing and implementing systems that integrate hardware devices, data processing, and user interfaces into practical and reliable solutions.</p>
+                <p>My primary focus includes developing microcontroller- and sensor-based systems, managing data through backend services and databases, and presenting information via clear and user-friendly web dashboards. I am comfortable working in an end-to-end development process, from requirement analysis and system design to implementation, testing, and refinement. Beyond technical skills, I value structured work, attention to detail, and solutions that align with user needs and business processes. I believe that effective technology should not only function correctly, but also be easy to use, maintain, and deliver real value in daily operations.</p>
+                <p>This portfolio is designed to provide an overview of my experience, skills, and working approach in IoT and web application development.</p>
+                <a href="#portfolio" class="btn">View Portfolio</a>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 class="heading"><span>Skills</span></h2>
+            <div class="skills-container">
+                <div class="skills-box">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming Languages</h3>
+                    <p>Java, C++, Python, HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skills-box">
+                    <i class="fas fa-microchip"></i>
+                    <h3>IoT & Hardware</h3>
+                    <p>Arduino, ESP32, Raspberry Pi, Sensors (DS18B20, Ultrasonic), Actuators</p>
+                </div>
+                <div class="skills-box">
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools & Platforms</h3>
+                    <p>Git, VS Code, Proteus, Node.js, MySQL</p>
+                </div>
+                <div class="skills-box">
+                    <i class="fas fa-users"></i>
+                    <h3>Soft Skills</h3>
+                    <p>Problem Solving, Teamwork, Communication, Leadership</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+            <div class="portfolio-container">
+                <div class="portfolio-box" data-title="Java Projects" data-desc="A collection of Java-based projects, ranging from desktop applications to backend services. Includes the use of OOP, Swing/JavaFX, and database integration." data-img="java-projects.jpg" data-github="https://github.com/alysahanel?tab=repositories&q=&type=&language=java">
+                    <img src="java-projects.jpg" alt="Java Project" style="width:100%; height:100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    <div class="portfolio-layer">
+                        <h4>Java Projects</h4>
+                        <p>Java Applications & Backend.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box" data-title="Cash Tracking App" data-desc="Personal financial management application with a Modern Dark Mode interface. Features include recording income/expenses, real-time balance summary, and transaction history. Built with React.js (Frontend) and Python Flask (Backend)." data-img="cashtrack.webp" data-demo="cashtracking/" data-github="https://github.com/alysahanel/CashTracking">
+                    <img src="cashtrack.webp" alt="Cash Tracking App" style="width:100%; height:100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    <div class="portfolio-layer">
+                        <h4>Cash Tracking</h4>
+                        <p>Financial Management App.</p>
+                        <a href="javascript:void(0);"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box" data-title="C++ Projects" data-desc="Exploration in system programming and algorithms using C++. Includes memory management projects, data structures, and programming competitions." data-img="cpp-projects.jpg" data-github="https://github.com/alysahanel?tab=repositories&q=&type=&language=c%2B%2B">
+                    <img src="cpp-projects.jpg" alt="C++ Project" style="width:100%; height:100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    <div class="portfolio-layer">
+                        <h4>C++ Projects</h4>
+                        <p>System & Algorithm Exploration.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box" data-title="Compliance System" data-desc="Integrated E-Monitoring system for managing corporate legal compliance and permits. Uses Node.js, MySQL, and Tailwind CSS." data-img="compliance.jpg" data-github="https://github.com/alysahanel/Compliance-System-Alysa-Milano" data-demo="legal/">
+                    <img src="compliance.jpg" alt="Compliance System" style="width:100%; height:100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    <div class="portfolio-layer">
+                        <h4>Compliance System</h4>
+                        <p>E-Monitoring System for legal compliance and permits.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box" data-title="AMMS (Management System)" data-desc="Comprehensive General Affairs (GA) Management System for managing item requests, inventory, and approval workflows. Uses Node.js, Express, and MySQL." data-img="manajemen.jpg" data-github="https://github.com/alysahanel/AlysaMilanoManagementSystem" data-demo="gams/">
+                    <img src="manajemen.jpg" alt="AMMS" style="width:100%; height:100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    <div class="portfolio-layer">
+                        <h4>AMMS</h4>
+                        <p>General Affairs and Inventory Management System.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box" data-title="Healthcare Web" data-desc="Interactive health platform with Symptom Diagnosis, BMI Calculator, and Diabetes Risk Assessment features. Built with pure HTML, CSS, and JavaScript." data-img="healthcare.jpg" data-demo="healthcare/" data-github="https://github.com/alysahanel/Healthcare.git">
+                    <img src="healthcare.jpg" alt="Healthcare Web" style="width:100%; height:100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    <div class="portfolio-layer">
+                        <h4>Healthcare Web</h4>
+                        <p>Diagnosis & Health Calculator.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box" data-title="Autonomous Monitoring Control System in the Agriculture and Fisheries Sector" data-desc="Water quality monitoring system for smart fisheries using DS18B20 temperature sensors, RTC, EEPROM, and Relay. Equipped with a Node.js-based backend." data-img="fishery.jpeg" data-fishery="https://github.com/alysahanel?tab=repositories&q=fishery+brin" data-ds18b20="https://github.com/search?q=owner%3Aalysahanel+ds18b20&type=repositories" data-rtc="https://github.com/search?q=owner%3Aalysahanel+rtc&type=repositories" data-eeprom="https://github.com/search?q=owner%3Aalysahanel+eeprom&type=repositories" data-relay="https://github.com/search?q=owner%3Aalysahanel+relay&type=repositories">
+                    <img src="fishery.jpeg" alt="Autonomous Monitoring Control System" style="width:100%; height:100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    <div class="portfolio-layer">
+                        <h4 style="font-size: 2rem;">Autonomous Monitoring Control System</h4>
+                        <p>Aquaculture & Fisheries Sector</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box" data-title="Autonomous Mobile Robot" data-desc="Autonomous mobile robot with navigation and obstacle avoidance capabilities. Uses ultrasonic sensors and an Arduino-based controller." data-img="robotic.jpeg" data-joystick="https://github.com/search?q=owner%3Aalysahanel+joystick&type=repositories" data-parking="https://github.com/search?q=owner%3Aalysahanel+parking+sensor&type=repositories" data-car="https://github.com/search?q=owner%3Aalysahanel+car&type=repositories">
+                    <img src="robotic.jpeg" alt="Autonomous Mobile Robot" style="width:100%; height:100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    <div class="portfolio-layer">
+                        <h4>Mobile Robot</h4>
+                        <p>Autonomous & Obstacle Avoidance.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="certificates">
+            <h2 class="heading"><span>Certificates</span></h2>
+            <div class="portfolio-container">
+                 <div class="portfolio-box" data-title="Nippon Steel Internship" data-desc="Industrial internship experience at Nippon Steel, learning about steel manufacturing processes and industrial control systems." data-img="nippon.jpeg" data-certificate="Internship_Certificate.pdf">
+                    <img src="nippon.jpeg" alt="Nippon Steel Internship" style="width:100%; height:100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    <div class="portfolio-layer">
+                        <h4>Nippon Steel</h4>
+                        <p>Internship Experience.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box" data-title="BRIN Research" data-desc="Research certificate at the National Research and Innovation Agency (BRIN) regarding the development of IoT systems for fisheries." data-img="brin.jpeg" data-certificate="BRIN_Certificate.jpg" data-report="Fishery_Report.pdf">
+                    <img src="brin.jpeg" alt="BRIN Certificate" style="width:100%; height:100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    <div class="portfolio-layer">
+                        <h4>BRIN Research</h4>
+                        <p>Research Certificate.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box" data-title="SetSail BizAccel Internship" data-desc="Internship Experience Program at SetSail BizAccel, President University. Completed the internship program from September 2023 to April 2024." data-img="setsail.jpg" data-certificate="setsail-internship.png">
+                    <img src="setsail.jpg" alt="SetSail BizAccel Internship" style="width:100%; height:100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    <div class="portfolio-layer">
+                        <h4>SetSail BizAccel</h4>
+                        <p>Internship Experience.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Alysa Milano | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="" alt="" class="modal-img">
+            <h2 class="modal-title"></h2>
+            <p class="modal-desc"></p>
+            <div class="modal-buttons">
+                <a href="#" class="btn modal-github" target="_blank">View Code</a>
+                <a href="#" class="btn modal-repo-main" target="_blank" style="display:none;">Main Code</a>
+                <a href="#" class="btn modal-repo-temp" target="_blank" style="display:none;">Temp Code</a>
+                <a href="#" class="btn modal-fishery" target="_blank" style="display:none;">Fishery Code</a>
+                <a href="#" class="btn modal-joystick" target="_blank" style="display:none;">Joystick Code</a>
+                <a href="#" class="btn modal-car" target="_blank" style="display:none;">Car Code</a>
+                <a href="#" class="btn modal-parking" target="_blank" style="display:none;">Parking Code</a>
+                <a href="#" class="btn modal-ds18b20" target="_blank" style="display:none;">DS18B20 Code</a>
+                <a href="#" class="btn modal-rtc" target="_blank" style="display:none;">RTC Code</a>
+                <a href="#" class="btn modal-eeprom" target="_blank" style="display:none;">EEPROM Code</a>
+                <a href="#" class="btn modal-relay" target="_blank" style="display:none;">Relay Code</a>
+                <a href="#" class="btn modal-certificate" target="_blank" style="display:none;">View Certificate</a>
+                <a href="#" class="btn modal-report" target="_blank" style="display:none;">Final Report</a>
+                <a href="#" class="btn modal-demo" target="_blank" style="display:none;">Live Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

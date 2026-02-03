@@ -1,0 +1,71 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "GAMS 01/api/index.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": [
+          "GAMS 01/public/**",
+          "GAMS 01/views/**"
+        ]
+      }
+    },
+    {
+      "src": "Legal web/api/index.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": [
+          "Legal web/frontend/public/**",
+          "Legal web/backend/public-assets/**"
+        ]
+      }
+    },
+    {
+      "src": "CashTracking/backend/api/index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/gams/api/:match*",
+      "destination": "/GAMS 01/api/index.js"
+    },
+    {
+      "source": "/gams/:match*",
+      "destination": "/GAMS 01/api/index.js"
+    },
+    {
+      "source": "/legal/api/:match*",
+      "destination": "/Legal web/api/index.js"
+    },
+    {
+      "source": "/legal/:match*",
+      "destination": "/Legal web/api/index.js"
+    },
+    {
+      "source": "/cashtracking/static/:match*",
+      "destination": "/CashTracking/frontend/build/static/:match*"
+    },
+    {
+      "source": "/cashtracking/manifest.json",
+      "destination": "/CashTracking/frontend/build/manifest.json"
+    },
+    {
+      "source": "/cashtracking/favicon.ico",
+      "destination": "/CashTracking/frontend/build/favicon.ico"
+    },
+    {
+      "source": "/cashtracking/logo192.png",
+      "destination": "/CashTracking/frontend/build/logo192.png"
+    },
+    {
+      "source": "/cashtracking/api/:match*",
+      "destination": "/CashTracking/backend/api/index.py"
+    },
+    {
+      "source": "/cashtracking/:match*",
+      "destination": "/CashTracking/frontend/build/index.html"
+    }
+  ]
+}

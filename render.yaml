@@ -1,0 +1,42 @@
+services:
+  # 1. GAMS 01 Service
+  - type: web
+    name: gams-01
+    env: node
+    rootDir: GAMS 01
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+      - key: PORT
+        value: 10000
+    plan: free
+
+  # 2. Legal Web Service
+  - type: web
+    name: legal-web
+    env: node
+    rootDir: Legal web/backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+      - key: PORT
+        value: 10000
+    plan: free
+
+  # 3. CashTracking Service
+  - type: web
+    name: cashtracking
+    env: python
+    rootDir: CashTracking/backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: RENDER
+        value: true
+    plan: free
