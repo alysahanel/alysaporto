@@ -90,14 +90,24 @@ console.log('Copying GAMS...');
 copyDir(path.join(__dirname, 'gams/public'), path.join(distDir, 'gams/public'));
 // Also copy to root of gams folder in dist to support /gams/file.html structure if needed
 // Actually, our local-server serves gams/public at /gams, so we should map gams/public to dist/gams
-copyDir(path.join(__dirname, 'gams/public'), path.join(distDir, 'gams'));
+const gamsDist = path.join(distDir, 'gams');
+copyDir(path.join(__dirname, 'gams/public'), gamsDist);
+// Create index.html from dashboard.html for GAMS
+if (fs.existsSync(path.join(gamsDist, 'dashboard.html'))) {
+    fs.copyFileSync(path.join(gamsDist, 'dashboard.html'), path.join(gamsDist, 'index.html'));
+}
 
 
 // 3. Copy Legal (legal/frontend/public -> dist/legal)
 console.log('Copying Legal Web...');
 copyDir(path.join(__dirname, 'legal/frontend/public'), path.join(distDir, 'legal/frontend/public'));
 // Map legal/frontend/public to dist/legal for /legal/ URL access
-copyDir(path.join(__dirname, 'legal/frontend/public'), path.join(distDir, 'legal'));
+const legalDist = path.join(distDir, 'legal');
+copyDir(path.join(__dirname, 'legal/frontend/public'), legalDist);
+// Create index.html from dashboard.html for Legal
+if (fs.existsSync(path.join(legalDist, 'dashboard.html'))) {
+    fs.copyFileSync(path.join(legalDist, 'dashboard.html'), path.join(legalDist, 'index.html'));
+}
 
 
 // 4. Copy Healthcare Web (healthcare-web -> dist/healthcare-web)
