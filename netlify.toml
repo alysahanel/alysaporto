@@ -2,6 +2,15 @@
   publish = "dist"
   command = "node build-static.js"
 
+[functions]
+  directory = "netlify/functions"
+
+# GAMS API Function
+[[redirects]]
+  from = "/gams/api/*"
+  to = "/.netlify/functions/gams-api"
+  status = 200
+
 [[redirects]]
   from = "/gams/*"
   to = "/gams/:splat"
