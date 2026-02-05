@@ -1,4 +1,4 @@
-# Alysa Porto - Portfolio Projects
+# Alysa Portfolio
 
 Welcome to my project portfolio repository. This monorepo contains several full-stack web applications demonstrating my skills in Software Engineering, including **Inventory Management**, **Legal Compliance**, and **Financial Tracking**.
 
